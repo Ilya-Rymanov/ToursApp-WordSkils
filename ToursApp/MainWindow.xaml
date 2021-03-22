@@ -9,16 +9,18 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="44"/>
         </Grid.RowDefinitions>
-        <Image Source="Resources/1.jpg" HorizontalAlignment="Left" > </Image>
-        <TextBlock Text=" Header" FontSize=" 30" HorizontalAlignment ="Center"  VerticalAlignment ="Center"></TextBlock>
+        <Image Source="Resources/1.jpg" HorizontalAlignment="Left" Width="96" ></Image>
+        <TextBlock Text=" Header" FontSize=" 30" HorizontalAlignment ="Center"  VerticalAlignment ="Center" Height="40" Margin="335,20,353,15" Width="104"></TextBlock>
         <Grid Background ="#bae3e8" Panel.ZIndex ="-2"></Grid>
         <Grid Grid.Row=" 2" Background=" #445c93"></Grid>
         <Frame NavigationUIVisibility="Hidden"  ContentRendered="MainFrame_ContentRendered" Grid.Row="1" Name ="MainFrame"></Frame>
-        <Button Content="Back" Name="BtnBack" HorizontalAlignment="Right" Click="BtnBack_Click"></Button>
-        
+        <Button Content="Back" Name="BtnBack" HorizontalAlignment="Right" Click="BtnBack_Click" Height="Auto" Margin="0,22,5,23"></Button>
+
+        <Button Content="Добавить" Grid.Row="2" HorizontalAlignment="Left" Name="BtnAdd" Click="BtnAdd_Click" Height="Auto" Margin="5,5,0,10"></Button>
+        <Button Content="Удалить" Grid.Row="2" HorizontalAlignment="Right" Name="BtnDelete" Click="BtnDelete_Click" Height="Auto" Margin="0,5,5,10"></Button>
 
     </Grid>
 </Window>

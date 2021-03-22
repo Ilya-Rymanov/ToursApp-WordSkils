@@ -43,5 +43,15 @@ namespace ToursApp
                 BtnBack.Visibility = Visibility.Hidden;
             }
         }
+
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AddEditPage());
+        }
+
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AddEditPage());
+        }
     }
 }

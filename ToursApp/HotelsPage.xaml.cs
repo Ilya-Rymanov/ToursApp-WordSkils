@@ -23,12 +23,19 @@ namespace ToursApp
         public HotelsPage()
         {
             InitializeComponent();
+            DGridHotels.ItemsSource = End_313isp_ToornAppEntities.GetContext().Hotel.ToList();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
             Manager.MainFrame.Navigate(new AddEditPage()); 
+        }
+
+
+        private void BtnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AddEditPage());
         }
     }
 }
