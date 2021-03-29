@@ -22,12 +22,12 @@ namespace ToursApp
         }
     
         public int Id { get; set; }
-        public Nullable<int> TicketCount { get; set; }
-        public Nullable<int> Name { get; set; }
-        public string Descriotion { get; set; }
+        public int TicketCount { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
         public byte[] ImagePreview { get; set; }
-        public Nullable<decimal> Price { get; set; }
-        public Nullable<int> IsActual { get; set; }
+        public decimal Price { get; set; }
+        public bool IsActual { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Hotel> Hotel { get; set; }

@@ -15,7 +15,7 @@ namespace ToursApp
     public partial class HotelImage
     {
         public int Id { get; set; }
-        public Nullable<int> HotelId { get; set; }
+        public int HotelId { get; set; }
         public byte[] ImageSource { get; set; }
     
         public virtual Hotel Hotel { get; set; }

@@ -23,7 +23,7 @@
         <TextBlock Text="Количество звёзд" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
         <TextBlock Text="Страна" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
         <TextBox Text="{Binding Name}"  MaxLength="100" Grid.Column="1" Margin="0,24" Height="40"></TextBox>
-        <TextBox Text="{Binding CountOfStarts}" Grid.Column="1" Grid.Row="1" Width="204" Height="40" HorizontalAlignment="Left"  ></TextBox>
+        <TextBox Text="{Binding CountOfStars}" Grid.Column="1" Grid.Row="1" Width="204" Height="40" HorizontalAlignment="Left"  ></TextBox>
         <ComboBox  SelectedItem="{Binding Country}" Grid.Row="2" Grid.Column="1" x:Name="Country" DisplayMemberPath="Name" Margin="0,24" Height="40"></ComboBox>
 
         <Button Content="Сохранить" Grid.ColumnSpan="2" Grid.Row="3" Name="BtnSave" Click="BtnSave_Click"></Button>

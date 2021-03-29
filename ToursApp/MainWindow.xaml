@@ -19,8 +19,8 @@
         <Frame NavigationUIVisibility="Hidden"  ContentRendered="MainFrame_ContentRendered" Grid.Row="1" Name ="MainFrame"></Frame>
         <Button Content="Back" Name="BtnBack" HorizontalAlignment="Right" Click="BtnBack_Click" Height="Auto" Margin="0,22,5,23"></Button>
 
-        <Button Content="Добавить" Grid.Row="2" HorizontalAlignment="Left" Name="BtnAdd" Click="BtnAdd_Click" Height="Auto" Margin="5,5,0,10"></Button>
-        <Button Content="Удалить" Grid.Row="2" HorizontalAlignment="Right" Name="BtnDelete" Click="BtnDelete_Click" Height="Auto" Margin="0,5,5,10"></Button>
+        <Button Content="Добавить" Grid.Row="2" HorizontalAlignment="Center" Name="BtnAdd" Click="BtnAdd_Click" Height="Auto" Margin="5,5,0,10"></Button>
+        
 
     </Grid>
 </Window>

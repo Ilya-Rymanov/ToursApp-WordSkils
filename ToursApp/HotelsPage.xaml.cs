@@ -23,7 +23,7 @@ namespace ToursApp
         public HotelsPage()
         {
             InitializeComponent();
-            DGridHotels.ItemsSource = End_313isp_ToornAppEntities.GetContext().Hotel.ToList();
+            DGridHotels.ItemsSource = Tour_FrolovEntities.GetContext().Hotel.ToList();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -35,15 +35,31 @@ namespace ToursApp
 
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new AddEditPage((sender as Button).DataContext as Hotel);
+            Manager.MainFrame.Navigate(new AddEditPage((sender as Button).DataContext as Hotel));
         }
-
+        
         private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
             if(Visibility == Visibility.Visible)
             {
-                End_313isp_ToornAppEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                DGridHotels.ItemsSource = End_313isp_ToornAppEntities.GetContext().Hotel.ToList();
+                Tour_FrolovEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DGridHotels.ItemsSource = Tour_FrolovEntities.GetContext().Hotel.ToList();
+            }
+        }
+
+        private void BtnEdit_Click_1(object sender, RoutedEventArgs e)
+        {
+            var hotelsForRemoving = DGridHotels.SelectedItems.Cast<Hotel>().ToList();
+            if(MessageBox.Show($"Вы точно хотите удалить следуещее {hotelsForRemoving.Count()} элементов?", "Внимание",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    Tour_FrolovEntities.GetContext().Hotel.RemoveRange(hotelsForRemoving);
+                    Tour_FrolovEntities.GetContext().SaveChanges();
+                    MessageBox.Show("Данные удалены");
+                    DGridHotels.ItemsSource = Tour_FrolovEntities.GetContext().Hotel.ToList();
+                }
             }
         }
     }

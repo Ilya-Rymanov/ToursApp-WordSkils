@@ -12,23 +12,25 @@ namespace ToursApp
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-
-    public partial class End_313isp_ToornAppEntities : DbContext
+    
+    public partial class Tour_FrolovEntities : DbContext
     {
-
-        private static End_313isp_ToornAppEntities _context;
-        public End_313isp_ToornAppEntities()
-            : base("name=End_313isp_ToornAppEntities")
+        private static Tour_FrolovEntities _context;
+        
+        public Tour_FrolovEntities()
+            : base("name=Tour_FrolovEntities")
         {
         }
 
-        public static End_313isp_ToornAppEntities GetContext()
+        public static Tour_FrolovEntities GetContext()
         {
             if (_context == null)
-                _context = new End_313isp_ToornAppEntities();
+
+                _context = new Tour_FrolovEntities();
+
             return _context;
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
@@ -38,8 +40,9 @@ namespace ToursApp
         public virtual DbSet<Hotel> Hotel { get; set; }
         public virtual DbSet<HotelComment> HotelComment { get; set; }
         public virtual DbSet<HotelImage> HotelImage { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<Tour> Tour { get; set; }
         public virtual DbSet<Type> Type { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
     }
 }

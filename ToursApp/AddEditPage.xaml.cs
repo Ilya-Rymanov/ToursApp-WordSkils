@@ -28,7 +28,7 @@ namespace ToursApp
             if (selectedHotel != null)
                 _currentHotel = selectedHotel;
             DataContext = _currentHotel;
-            Country.ItemsSource = End_313isp_ToornAppEntities.GetContext().Country.ToList();
+            Country.ItemsSource = Tour_FrolovEntities.GetContext().Country.ToList();
         }
 
         private void BtnSave_Click(object sender, RoutedEventArgs e)
@@ -37,7 +37,7 @@ namespace ToursApp
 
             if (string.IsNullOrWhiteSpace(_currentHotel.Name))
                 errors.AppendLine("Укажите название отеля");
-            if (_currentHotel.CountOfStarts < 1 || _currentHotel.CountOfStarts > 5)
+            if (_currentHotel.CountOfStars < 1 || _currentHotel.CountOfStars > 5)
                 errors.AppendLine("Количество звёзд - число от 1 до 5");
             if (_currentHotel.Country == null)
                 errors.AppendLine("Выберите страну");
@@ -47,14 +47,14 @@ namespace ToursApp
                 MessageBox.Show(errors.ToString());
                 return;
             }
-            if(_currentHotel.ID == 0)
+            if(_currentHotel.Id == 0)
             {
-                End_313isp_ToornAppEntities.GetContext().Hotel.Add(_currentHotel);
+                Tour_FrolovEntities.GetContext().Hotel.Add(_currentHotel);
             }
 
             try
             {
-                End_313isp_ToornAppEntities.GetContext().SaveChanges();
+                Tour_FrolovEntities.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена!");
                 Manager.MainFrame.GoBack();
             }

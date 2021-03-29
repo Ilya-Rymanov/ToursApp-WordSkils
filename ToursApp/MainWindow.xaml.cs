@@ -23,7 +23,7 @@ namespace ToursApp
         public MainWindow()
         {
             InitializeComponent();
-            DGridHotels.ItemsSource = End_313isp_ToornAppEntities.GetContext().Hotel.ToList();
+            
 
             MainFrame.Navigate(new HotelsPage());
             Manager.MainFrame = MainFrame;
@@ -53,7 +53,7 @@ namespace ToursApp
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
-            var hotelsfromremoving = DGridHotels.
+           
         }
     }
 }

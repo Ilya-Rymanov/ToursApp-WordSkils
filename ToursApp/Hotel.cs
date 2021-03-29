@@ -22,9 +22,9 @@ namespace ToursApp
             this.Tour = new HashSet<Tour>();
         }
     
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
-        public Nullable<int> CountOfStarts { get; set; }
+        public int CountOfStars { get; set; }
         public string CountryCode { get; set; }
     
         public virtual Country Country { get; set; }
