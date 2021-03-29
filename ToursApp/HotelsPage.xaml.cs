@@ -60,6 +60,10 @@ namespace ToursApp
                     MessageBox.Show("Данные удалены");
                     DGridHotels.ItemsSource = Tour_FrolovEntities.GetContext().Hotel.ToList();
                 }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+                }
             }
         }
     }
