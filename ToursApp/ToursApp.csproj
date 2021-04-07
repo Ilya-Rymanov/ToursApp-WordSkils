@@ -183,6 +183,22 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\Туры.txt" />
+    <Resource Include="Resources\туры фото\Болгарское наследие.jpg" />
+    <Resource Include="Resources\туры фото\Волшебный восток.jpg" />
+    <Resource Include="Resources\туры фото\Город с Большими амбициями.jpg" />
+    <Resource Include="Resources\туры фото\Город четырех ворот.jpg" />
+    <Resource Include="Resources\туры фото\Горячий отдых зимой и летом.jpg" />
+    <Resource Include="Resources\туры фото\Древкий Минск.jpg" />
+    <Resource Include="Resources\туры фото\Жумчужина Татарстана.jpg" />
+    <Resource Include="Resources\туры фото\Знакомтесь, Амстердам!.jpg" />
+    <Resource Include="Resources\туры фото\Из Алании к загадочным пещерам Алтыжбешик.jpg" />
+    <Resource Include="Resources\туры фото\Многопикий Сувон.jpg" />
+    <Resource Include="Resources\туры фото\Москва поэтическая.jpeg" />
+    <Resource Include="Resources\туры фото\Незабываемый Дегм.jpg" />
+    <Resource Include="Resources\туры фото\Отдых на райском острове.jpg" />
+    <Resource Include="Resources\туры фото\По страрому Таплину.jpg" />
+    <Resource Include="Resources\туры фото\Экскурсионные-туры-в-Италию-3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
