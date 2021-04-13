@@ -149,6 +149,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -173,6 +174,21 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="image\Болгарское наследие.jpg" />
+    <Resource Include="image\Волшебный восток.jpg" />
+    <Resource Include="image\Город с Большими амбициями.jpg" />
+    <Resource Include="image\Город четырех ворот.jpg" />
+    <Resource Include="image\Горячий отдых зимой и летом.jpg" />
+    <Resource Include="image\Древкий Минск.jpg" />
+    <Resource Include="image\Жумчужина Татарстана.jpg" />
+    <Resource Include="image\Знакомтесь, Амстердам!.jpg" />
+    <Resource Include="image\Из Алании к загадочным пещерам Алтыжбешик.jpg" />
+    <Resource Include="image\Многопикий Сувон.jpg" />
+    <Resource Include="image\Москва поэтическая.jpeg" />
+    <Resource Include="image\Незабываемый Дегм.jpg" />
+    <Resource Include="image\Отдых на райском острове.jpg" />
+    <Resource Include="image\По страрому Таплину.jpg" />
+    <Resource Include="image\Экскурсионные-туры-в-Италию-3.jpg" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -184,66 +200,21 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Resource Include="Туры.txt" />
-    <Resource Include="Resources\туры фото\Болгарское наследие.jpg" />
-    <Resource Include="Resources\туры фото\Волшебный восток.jpg" />
-    <Resource Include="Resources\туры фото\Город с Большими амбициями.jpg" />
-    <Resource Include="Resources\туры фото\Город четырех ворот.jpg" />
-    <Resource Include="Resources\туры фото\Горячий отдых зимой и летом.jpg" />
-    <Resource Include="Resources\туры фото\Древкий Минск.jpg" />
-    <Resource Include="Resources\туры фото\Жумчужина Татарстана.jpg" />
-    <Resource Include="Resources\туры фото\Знакомтесь, Амстердам!.jpg" />
-    <Resource Include="Resources\туры фото\Из Алании к загадочным пещерам Алтыжбешик.jpg" />
-    <Resource Include="Resources\туры фото\Многопикий Сувон.jpg" />
-    <Resource Include="Resources\туры фото\Москва поэтическая.jpeg" />
-    <Resource Include="Resources\туры фото\Незабываемый Дегм.jpg" />
-    <Resource Include="Resources\туры фото\Отдых на райском острове.jpg" />
-    <Resource Include="Resources\туры фото\По страрому Таплину.jpg" />
-    <Resource Include="Resources\туры фото\Экскурсионные-туры-в-Италию-3.jpg" />
-    <Content Include="туры фото\Болгарское наследие.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="туры фото\Волшебный восток.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="туры фото\Город с Большими амбициями.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="туры фото\Город четырех ворот.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="туры фото\Горячий отдых зимой и летом.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="туры фото\Древкий Минск.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="туры фото\Жумчужина Татарстана.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="туры фото\Знакомтесь, Амстердам!.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="туры фото\Из Алании к загадочным пещерам Алтыжбешик.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="туры фото\Многопикий Сувон.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="туры фото\Москва поэтическая.jpeg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="туры фото\Незабываемый Дегм.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="туры фото\Отдых на райском острове.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="туры фото\По страрому Таплину.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="туры фото\Экскурсионные-туры-в-Италию-3.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Resource Include="туры фото\Болгарское наследие.jpg" />
+    <Resource Include="туры фото\Волшебный восток.jpg" />
+    <Resource Include="туры фото\Город с Большими амбициями.jpg" />
+    <Resource Include="туры фото\Город четырех ворот.jpg" />
+    <Resource Include="туры фото\Горячий отдых зимой и летом.jpg" />
+    <Resource Include="туры фото\Древкий Минск.jpg" />
+    <Resource Include="туры фото\Жумчужина Татарстана.jpg" />
+    <Resource Include="туры фото\Знакомтесь, Амстердам!.jpg" />
+    <Resource Include="туры фото\Из Алании к загадочным пещерам Алтыжбешик.jpg" />
+    <Resource Include="туры фото\Многопикий Сувон.jpg" />
+    <Resource Include="туры фото\Москва поэтическая.jpeg" />
+    <Resource Include="туры фото\Незабываемый Дегм.jpg" />
+    <Resource Include="туры фото\Отдых на райском острове.jpg" />
+    <Resource Include="туры фото\По страрому Таплину.jpg" />
+    <Resource Include="туры фото\Экскурсионные-туры-в-Италию-3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -34,7 +34,7 @@ namespace ToursApp
 
         private void ImportTours()
         {
-            var fileData = File.ReadAllLines("../../Resources/туры фото");
+            var fileData = File.ReadAllLines("../../image");
             var images = Directory.GetFiles(@"Туры.txt");
 
             foreach (var line in fileData)
